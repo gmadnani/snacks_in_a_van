@@ -1,11 +1,15 @@
 import React, {useState, useEffect} from "react";
-import {AppBar, Toolbar, IconButton, Drawer, Link, MenuItem} from "@material-ui/core";
+import {AppBar, Toolbar, IconButton, Drawer, Link, MenuItem, Button} from "@material-ui/core";
 import {Link as RouterLink} from "react-router-dom";
 import MenuIcon from '@material-ui/icons/Menu';
 // import styled from "styled-components";
 // import "./navbar.css";
 
 const headersData = [
+    {
+     label:"Home",
+     href: "/", 
+    },
     {
       label: "Listings",
       href: "/listings",
@@ -55,6 +59,7 @@ function Navbar() {
                 >
                 Snack in a Van
             </IconButton>
+            <div>{getNavbarButtons()}</div>
           </Toolbar>
         );
       };
@@ -96,19 +101,35 @@ function Navbar() {
       const getDrawerChoices = () => {
         return headersData.map(({ label, href }) => {
           return (
-            // <Link
-            //   {...{
-            //     component: RouterLink,
-            //     to: href,
-            //     color: "inherit",
-            //     style: { textDecoration: "none" },
-            //     key: label,
-            //   }}
-            // >
+            <Link
+              {...{
+                component: RouterLink,
+                to: href,
+                color: "inherit",
+                style: { textDecoration: "none" },
+                key: label,
+              }}
+            >
               <MenuItem>{label}</MenuItem>
-            // </Link>
-          //<div>hi</div>
+             </Link>
             );
+        });
+      };
+
+      const getNavbarButtons = () => {
+        return headersData.map(({ label, href }) => {
+          return (
+            <Button
+              {...{
+                key: label,
+                color: "inherit",
+                to: href,
+                component: RouterLink,
+              }}
+            >
+              {label}
+            </Button>
+          );
         });
       };
 
