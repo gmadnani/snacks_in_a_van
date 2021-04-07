@@ -12,6 +12,14 @@ const userSchema = new Schema({
         index: true,
         unique: true
     },
+    password: {
+        type: String,
+        required: [true, "can't be blank"], 
+    },
+    name: {
+        type: String,
+        required:[true]
+    }
 },{
     timestamps: true,
 });
