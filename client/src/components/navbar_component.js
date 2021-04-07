@@ -26,6 +26,10 @@ const headersData = [
       label: "Log Out",
       href: "/logout",
     },
+    {
+      label: "Menu",
+      href: "/Menu",
+    },
   ];
 
 function Navbar() {
