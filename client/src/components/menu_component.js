@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-function Home() {
+function Menu() {
 return (
     
     <div>
         <br/>
-        <h1>home page</h1>
+        <h1>Menu page</h1>
     </div>
     
     
 );
 }
-export default Home;
+export default Menu;
