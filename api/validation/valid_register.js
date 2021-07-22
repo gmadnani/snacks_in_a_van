@@ -1,6 +1,7 @@
 const Validator = require("validator");
 const isEmpty = require ("isempty");
 
+//check validity of register inputs
 module.exports = function validRegisterInput(data){
     let errors = {};
 
@@ -19,20 +20,20 @@ module.exports = function validRegisterInput(data){
         errors.email = "Email is invalid";
     }
 
+    if (!Validator.isLength(data.password, { min : 6, max: 30 })){
+        errors.password = "Password must be atleast 6 characters";
+    }
+
     if (Validator.isEmpty(data.password)){
         errors.password = "password Required";
     }
 
+    if (!Validator.equals(data.password, data.conpass)) {
+        errors.conpass = "Password does not match";
+    }
+
     if (Validator.isEmpty(data.conpass)){
         errors.conpass = "confirm password Required";
-    }
-
-    if (!Validator.isLength(data.password, { min : 6, max: 30 })){
-        errors.name = "Password must be atleast 6 characters";
-    }
-
-    if (!Validator.equals(data.password, data.conpass)) {
-        errors.name = "Password does not match";
     }
 
     return{

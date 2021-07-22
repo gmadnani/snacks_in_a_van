@@ -1,0 +1,80 @@
+.container_price {
+  position: relative;
+  text-align: left;
+  color: black;
+}
+
+.centre-left {
+  position: absolute;
+  top: 6px;
+  left: 15.5px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #2ec5ce;
+  background-color: cutom-color;
+}
+.btn-xx {
+  font-size: 1.2rem;
+  padding: 1rem 1.2rem;
+}
+
+.main-row {
+  margin: 0px !important;
+}
+
+.btn {
+  text-transform: unset !important;
+  height: auto;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-desc {
+  font-size: small;
+  color: #2ec5ce;
+  width: 300px;
+}
+
+.menuItem-cont {
+  margin: 0px;
+  padding-left: 0px;
+  padding-bottom: 100px;
+}
+
+.add-button {
+  margin-bottom: 20px;
+}
+
+.menu-card {
+  width: 350px;
+  height: 480px;
+  margin-right: 20px;
+}
+
+.image-card {
+  width: 350px !important;
+  height: 200px !important;
+}
+
+.menu-heading {
+  margin-left: 280px;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-card {
+    width: 280px;
+    height: 480px;
+  }
+  .image-card {
+    width: 280px !important;
+    height: 200px !important;
+  }
+  .menu-heading {
+    margin-left: 60px;
+  }
+}

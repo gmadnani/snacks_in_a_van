@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+**The University of Melbourne**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# INFO30005 – Web Information Technologies
 
-## Available Scripts
+# Group Project Repository
 
-In the project directory, you can run:
+## Snacks in a Van deployed Application on Heroku and Firebase
 
-### `npm start`
+Frontend - https://snacks-in-a-van.web.app
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Backend - https://final-snacks-backend.herokuapp.com/
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Commit ID - db9786eb6a156d71fd612c0640a50a1d1777cd30
 
-### `npm test`
+## Dummy Login or you can Register
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Customer login details:
+email: dummy@gmail.com
+password: dummy123
 
-### `npm run build`
+Vendor login details:
+email: Tomato Town
+password: town123
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Running our application on Local Server
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Running Frontend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```yaml
+cd client
+npm install
+npm start
+```
 
-### `npm run eject`
+### Running Backend
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Before running backend please change all the links to localhost:3000 in frontend so as to connect all the axios calls.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```yaml
+cd api
+npm install
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Table of contents
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [Team Members](#team-members)
+- [General Info](#general-info)
+- [Technologies](#technologies)
+- [Code Implementation](#code-implementation)
+- [Adding Images](#adding-images)
 
-## Learn More
+## Team Members
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Name            |            Task             | State |
+| :-------------- | :-------------------------: | ----: |
+| Pulkit Aggarwal |         Full Stack          |  Done |
+| Girish Madnani  |         Full Stack          |  Done |
+| Shubham Singh   |      FrontEnd, Report       |  Done |
+| Siwen Gao       | UI Design, Frontend, Report |  Done |
+| Ruoxi Feng      | UI Design, Frontend, Report |  Done |
+| Kang de Liang   |   Entire Vendor Frontend    |  Done |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## General info
 
-### Code Splitting
+For this project, we didn't have much experience with React.JS and Node.Js and all
+of us had to learn the technologies from scratch. This project was basically building a customer-vendor platform for a Food Truck company. It definitely helped us learn a lot of the technologies we had never used before.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Please try our Vendor application on Ipad pro to get a better experience.
 
-### Analyzing the Bundle Size
+## Technologies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Project is created with:
 
-### Making a Progressive Web App
+- NodeJs 14.16.0
+- React.JS 2.33
+- Heroku
+- Firebase
+- MongoDB
+- Express.JS
+- Redux
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Adding Images
 
-### Advanced Configuration
+Here's a small brief of how adding `Orders` work in our application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Menu to Cart
+- Cart to Order
+- Cancel order Page
+- Feedback Page
 
-### Deployment
+<p align="center">
+  <img src="_shared/1.gif"  width="1000" >
+</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Here's a small brief of how `Vendors` work in our application
 
-### `npm run build` fails to minify
+- Vendor Status can be changed and displayed
+- Vendor Orders (Outstanding, Fulfilled, Picked up or completed)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center">
+  <img src="_shared/2.gif"  width="1000" >
+</p>
+
+**Done with all of these tasks:**
+
+- [x] Read the Project handouts carefully
+- [x] User Interface (UI)mockup
+- [x] App server mockup
+- [x] Front-end + back-end (one feature)
+- [x] Complete system + source code
+- [x] Report on your work(+ test1 feature)
+
+NOTE: Shared invite for database with Greg Wadley.
+If you need access feel free to email [pulkit@student.unimelb.edu.au](mailto:pulkit@student.unimelb.edu.au)

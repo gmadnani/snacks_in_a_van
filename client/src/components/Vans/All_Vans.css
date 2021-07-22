@@ -1,0 +1,52 @@
+.all_van_page_body {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.all_van_title {
+  font-weight: bold;
+  margin-left: 650px;
+  margin-bottom: 50px;
+}
+
+/*Style for Pagination*/
+.pagination_container {
+  text-align: center;
+}
+.pagination {
+  margin-top: auto;
+  display: inline-block;
+}
+.p {
+  border: 0;
+  box-shadow: none;
+  background: white;
+}
+
+.vendor-row {
+  width: 590px;
+  margin-right: 200px;
+  height: 100px;
+}
+
+.vans-grid {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.card-van {
+  width: 240px;
+}
+
+/**********************/
+
+@media only screen and (max-width: 600px) {
+  .all_van_title {
+    font-weight: bold;
+    margin-left: 35px;
+    margin-bottom: 30px;
+  }
+
+  .card-van {
+    width: 200px;
+  }
+}

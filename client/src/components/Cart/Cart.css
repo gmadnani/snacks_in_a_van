@@ -1,0 +1,47 @@
+.BoxStyle {
+  width: 90%;
+  height: 95%;
+  border: rounded;
+  border-radius: 1rem;
+  border-width: 0.2rem;
+  border-color: #2ec5ce;
+  border-style: solid;
+  margin-left: 0.5%;
+  box-shadow: unset;
+  margin-right: 0%;
+}
+
+.rectangle {
+  height: 1.5%;
+  width: 32%;
+  border: rounded;
+  border-radius: 1rem;
+  margin-left: 5%;
+  background-color: #2ec5ce;
+  margin-top: 2.5%;
+}
+
+.Special_font {
+  font-size: 130%;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+.cart-cost {
+  margin-top: 10px;
+}
+
+.menu-image {
+  margin-bottom: 20px;
+  border-radius: 30%;
+}
+
+.menu-name {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.menu-small {
+  margin-bottom: 40px;
+  margin-left: 15px;
+}

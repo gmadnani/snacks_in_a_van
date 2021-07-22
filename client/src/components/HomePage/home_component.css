@@ -1,0 +1,133 @@
+* {
+  font: "Montserrat" !important;
+}
+
+/* Header */
+
+.home-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./home.png");
+  min-height: 500px;
+}
+/* Vans Section */
+.five-closest {
+  margin-left: 400px;
+}
+
+.five-closest h3 {
+  font-size: 48px;
+}
+
+.show-button {
+  color: #a057f3;
+}
+
+.btnnn {
+  background-color: #e6c8a2;
+  color: white;
+}
+.bg-1 {
+  background: rgba(117, 227, 234, 0.3); /* Green */
+  color: #ffffff;
+}
+.aa {
+  text-decoration: none;
+  padding-left: 50px;
+}
+.ii {
+  width: 200px;
+  height: 150px;
+  border-radius: 20px;
+}
+
+/* Last Section */
+.achieve-section {
+  background-color: #a057f3;
+  border-radius: 20px;
+  padding: 10px;
+  align-items: center;
+  padding-left: 100px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: purple;
+  font-weight: bold;
+}
+.ff {
+  color: purple;
+}
+.nav-link {
+  color: lightskyblue !important;
+  padding: 20px;
+}
+.navbar-toggler {
+  width: 47px;
+  height: 34px;
+  background-color: white;
+  border: none;
+}
+
+.navbar-toggler .line {
+  width: 100%;
+  float: left;
+  height: 1px;
+  background-color: black;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .al-lft {
+    margin-left: -84px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+  }
+  .home-section {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 300px;
+    background-image: none;
+  }
+
+  .five-closest {
+    width: 280px;
+    margin-left: 50px;
+  }
+  .five-closest h3 {
+    font-size: 18px;
+  }
+
+  .home-van-card {
+    margin-left: 20px;
+    padding-left: 0;
+    width: 100px;
+    height: 200px !important;
+  }
+
+  .description {
+    width: 100px;
+  }
+
+  .meters {
+    margin: 0;
+    margin-bottom: 10px !important;
+  }
+
+  .home-van-card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .achieve-section {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    align-items: center;
+    padding-left: 60px;
+    margin-bottom: 10px;
+  }
+}

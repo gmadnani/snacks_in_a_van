@@ -1,0 +1,95 @@
+html,body,#root,.App,.page{
+    height: 100% !important;
+}
+
+p,span{
+    margin: 0;
+    padding: 0;
+}
+
+.left_nav{
+    position: absolute;
+    background: white;
+    width: 130px;
+    height: 100%;
+}
+
+.left_nav p{
+    margin: 50px auto;
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.left_nav a img {
+    width: 45px;
+    height: 55px;
+}
+
+.left_nav #icon{
+    padding: 0;
+    width: 80px;
+    height: 90px;
+}
+
+.left_nav #icon img{
+    width: 80px;
+    height: 90px;
+    padding: 0;
+}
+
+.body{
+    background: #F5F5F5;
+    height: 100%;
+    padding: 0 70px;
+    text-align: left;
+    margin-left: 100px;
+}
+
+#page_title{
+    font-weight: bold;
+    font-size: 60px;
+    padding: 30px 20px 20px;
+}
+
+b{
+    font-size: 25px;
+    margin-right: 190px;
+}
+
+b+p{
+    display: inline;
+    width:300px;
+    font-size: 19px;
+    margin-left: -43px;
+    color: black;
+    font-weight: 500;
+}
+
+.page_title{
+    font-weight: bold;
+    font-size: 60px;
+    padding: 30px 20px 20px;
+}
+
+.profile_box{
+    padding: 30px 40px 50px;
+    margin: 30px;
+    background: white;
+    border-radius: 10px;
+}
+
+#cur_addr{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+#title2{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.pwd-btn{
+    margin-top: 30px !important;
+}

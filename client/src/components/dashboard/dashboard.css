@@ -1,0 +1,17 @@
+.hi-name {
+  position: absolute;
+  bottom: 80px;
+  width: 600px;
+
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .hi-name {
+    position: absolute;
+    bottom: 80px;
+    width: 200px;
+
+    text-align: left;
+  }
+}

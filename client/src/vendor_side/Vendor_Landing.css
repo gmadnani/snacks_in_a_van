@@ -1,0 +1,41 @@
+p,span,p{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-image: url("./images/landing_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1440px;
+    margin: 0;
+}
+
+.title_container{
+    width: 750px;
+    /*background: yellow;*/
+    margin-left: 400px;
+    margin-top: 250px;
+}
+
+
+.Welcome{
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    text-shadow: 5px 5px 5px #8C30F5;
+}
+
+.text1{
+    color: white;
+    font-size: 25px;
+    margin-top: 80px;
+}
+
+.text2{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+

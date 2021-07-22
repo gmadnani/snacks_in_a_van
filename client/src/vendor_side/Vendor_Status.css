@@ -1,0 +1,103 @@
+html,body,#root,.App,.page{
+    height: 100% !important;
+}
+
+p,span{
+    margin: 0;
+    padding: 0;
+}
+
+.left_nav{
+    position: absolute;
+    background: white;
+    width: 130px;
+    height: 100%;
+}
+
+.left_nav p{
+    margin: 50px auto;
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.left_nav a img {
+    width: 45px;
+    height: 55px;
+}
+
+.left_nav #icon{
+    padding: 0;
+    width: 80px;
+    height: 90px;
+}
+
+.left_nav #icon img{
+    width: 80px;
+    height: 90px;
+    padding: 0;
+}
+
+.body{
+    background: #F5F5F5;
+    height: 100%;
+    padding: 0 70px;
+    text-align: left;
+    margin-left: 100px;
+}
+
+#Status{
+    font-weight: bold;
+    font-size: 60px;
+    padding: 30px 20px 20px;
+}
+
+.address_box,.status_box{
+    padding: 30px 40px 50px;
+    margin: 30px;
+    background: white;
+    border-radius: 10px;
+}
+
+
+#addr_update{
+     margin-top: 30px !important;
+ }
+
+#cur_addr{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.addr_input {
+    background: #F0F1F8;
+    /*padding:  5px 10px !important;*/
+    text-align: center;
+    height: 35px;
+    width: 80%;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+#title1{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#address{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#change{
+    margin-right: 50px;
+}
+
+
+
+#title2{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+

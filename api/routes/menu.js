@@ -1,42 +1,33 @@
 const router = require("express").Router();
-let Menu = require('../models/menu_model');
+let Menu = require("../models/menu_model");
+const {
+  addtoMenu,
+  getMenu,
+  getMenuItem,
+} = require("../controllers/menu_controller");
+const multer = require("multer");
+
+const shortid = require("shortid");
 
 //get all menu items
-router.route('/').get((req, res) => {
-    Menu.find()
-        .then(menu => res.json(menu))
-        .catch(err => res.status(400).json('Error: ' + err));
-});
+router.get("/", getMenu);
 
 //get only 1 menu item
-router.route('/:id').get((req, res) => {
-    Menu.findById(req.params.id)
-        .then(menu => res.json(menu))
-        .catch(err => res.status(400).json('Error: ' + err));
-});
+router.get("/:id", getMenuItem);
 
 //adding a new item to  the menu
-router.route('/add').post((req, res) => {
-
-    const { name, description, typetags, price } = req.body;
-    
-    const newMenu = new Menu({
-        name,
-        description,
-        typetags,
-        price
-    });
-
-    newMenu.save()
-        .then(() => res.json('Added to the Menu!'))
-        .catch(err => res.status(400).json('Error: ' + err));
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, "./uploads/");
+  },
+  filename: function (req, file, cb) {
+    cb(null, shortid.generate() + "-" + file.originalname);
+  },
 });
 
-//delete an item from the menu
-router.route('/:id').delete((req, res) => {
-    Menu.findByIdAndDelete(req.params.id)
-        .then(() => res.json("Item deleted!"))
-        .catch(err => res.status(400).json('Error: ' + err));
-})
+const upload = multer({ storage: storage });
+
+// add an item to menu
+router.post("/add", upload.single("itemPic"), addtoMenu);
 
 module.exports = router;

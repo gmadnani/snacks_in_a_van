@@ -1,41 +1,55 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
 
-const dbKey = require("./config/keys").MONGODB_URI
+require("dotenv").config();
 
 // setup express
 const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(cors());
+app.use(bodyParser.json());
 app.use(express.json());
 
-app.get("/",(req, res)=> res.status(200).send("Hi!"));
+//setup mongoose
+const uri = process.env.ATLAS_URI;
+mongoose.connect(
+  uri,
+  { useNewUrlParser: true, useUnifiedTopology: true },
+  function (err, res) {
+    try {
+      console.log("Connected to Database");
+    } catch (err) {
+      throw err;
+    }
+  }
+);
+
+app.get("/", (req, res) => res.status(200).json({ message: "Hi!!" }));
 
 console.log("Starting Server");
 app.listen(port, () => {
-    console.log(`Server is running on port: ${port}`);
+  console.log(`Server is running on port: ${port}`);
 });
 
 //setup routes
-const usersRouter = require('./routes/users');
-const passport = require("passport");
-const menuRouter = require('./routes/menu');
+const customersRouter = require("./routes/customers");
+const menuRouter = require("./routes/menu");
+const ratingRouter = require("./routes/rating");
+const orderRouter = require("./routes/order");
+const cartRouter = require("./routes/cart");
 
-app.use('/users',usersRouter);
+const vendorsRouter = require("./routes/vendors");
 
-app.use(passport.initialize());
-require("./config/passport")(passport);
+app.use("/customers", customersRouter);
+app.use("/vendors", vendorsRouter);
 
-app.use('/menu',menuRouter);
+app.use("/customers/menu", menuRouter);
+app.use("/customers/rate", ratingRouter);
 
-//setup mongoose
-console.log("Connecting to MongoDB");
-
-mongoose.connect( dbKey, 
-    { useNewUrlParser: true, useCreateIndex:true, useUnifiedTopology: true },
-    err => {
-        if (err) return console.error(err);
-        console.log("MongoDB connection established");
-    });
+app.use(express.static("uploads"));
+//app.use('/uploads', express.static('uploads'));
+app.use("/", orderRouter);
+app.use("/", cartRouter);

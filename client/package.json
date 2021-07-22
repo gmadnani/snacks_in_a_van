@@ -5,18 +5,27 @@
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@material-ui/styles": "^4.11.3",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.1",
     "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
     "classnames": "^2.2.6",
+    "google-maps-react": "^2.0.6",
+    "is-empty": "^1.2.0",
     "jwt-decode": "^3.1.2",
+    "mdb-react-ui-kit": "*",
     "react": "^17.0.1",
+    "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.1",
-    "react-redux": "^7.2.2",
+    "react-radio-group": "^3.0.3",
+    "react-rating-stars-component": "^2.2.0",
+    "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "redux": "^4.0.5",
+    "redux": "^4.1.0",
     "redux-thunk": "^2.3.0",
     "styled-components": "^5.2.1",
     "web-vitals": "^1.1.0"
@@ -27,7 +36,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "https://snack-ninja.herokuapp.com/",
   "eslintConfig": {
     "extends": [
       "react-app",

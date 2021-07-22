@@ -8,6 +8,8 @@ const menuSchema = new Schema({
     description: { type: String, required: true },
     typetags: { type: [String]},
     price: { type: Number, required: true },
+    offer: { type: Number },
+    itemPicture: { type: String, required: true },
 },{
     timestamps: true,
 });
