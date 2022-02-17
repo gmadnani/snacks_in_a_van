@@ -113,3 +113,6 @@ Here's a small brief of how `Vendors` work in our application
 
 NOTE: Shared invite for database with Greg Wadley.
 If you need access feel free to email [pulkit@student.unimelb.edu.au](mailto:pulkit@student.unimelb.edu.au)
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
